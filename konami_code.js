@@ -34,8 +34,6 @@ function init() {
    else {
     index = 0;
    }
-  
-
 });
 var index = 0;
 }
