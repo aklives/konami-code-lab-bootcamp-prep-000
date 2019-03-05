@@ -25,6 +25,7 @@ function init() {
   
   
    if (index === codes.length){
+     
      alert("Hurray!");
      index = 0;
    }
