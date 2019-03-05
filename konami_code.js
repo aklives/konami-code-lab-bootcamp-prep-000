@@ -23,7 +23,7 @@ function init() {
     console.log(index);
     index++;
     console.log(index);
-    alert("Hurray!");
+    
     
    if (index == codes.length){
      alert("Hurray!");
