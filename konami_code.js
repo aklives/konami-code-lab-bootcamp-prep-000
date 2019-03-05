@@ -22,7 +22,7 @@ function init() {
     console.log(key);
     console.log(index);
     index++;
-  
+    console.log(index);
   
    if (index === codes.length){
      alert("Hurray!");
