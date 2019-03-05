@@ -24,13 +24,13 @@ function init() {
     index++;
     console.log(index);
     
-  }  
+    
    if (index == codes.length){
      alert("Hurray!");
      index = 0;
    }
     
-  
+  }
    else {
     index = 0;
    }
