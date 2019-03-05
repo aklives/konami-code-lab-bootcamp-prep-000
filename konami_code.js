@@ -15,7 +15,7 @@ let index = 0;
 
 function init() {
   var body = document.querySelector('body');
-  body.addEventListener('keydown', function(element) {
+  body.addEventListener('keydown', function(event) {
   function onKeyDownHandler(e) {
   const key = e.key;
   while (codes[index] < codes.length){
