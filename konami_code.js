@@ -11,26 +11,30 @@ const codes = [
   "a"
 ];
 
-var index = 0;
+let index = 0;
 
 function init() {
-  let idx = 0;
-
-  document.body.addEventListener("keydown", (e) => {
-    const key = e.key;
-
-    idx = (codes[idx] === key) ? ++idx : 0;
-    console.log[key];
-    console.log[index];
-
-
-    if (idx === codes.length) {
-      window.alert("Hurray!");
-      idx = 0;
-    }
-
-  });
-
-index = 0;
+  var body = document.querySelector('body');
+  body.addEventListener('keydown', function(e) {
+  var key = e.key;
+  
+  if (key === codes[index]) {
+    console.log(key);
+    console.log(index);
+    index++;
+    console.log(index);
+    
+    
+   if (index == codes.length){
+     alert("Hurray!");
+     index = 0;
+   }
+    
+  }
+   else {
+    index = 0;
+   }
+});
+var index = 0;
 }
 
