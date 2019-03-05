@@ -20,6 +20,8 @@ function init() {
     const key = e.key;
 
     idx = (codes[idx] === key) ? ++idx : 0;
+    console.log[key];
+    console.log[index];
 
 
     if (idx === codes.length) {
