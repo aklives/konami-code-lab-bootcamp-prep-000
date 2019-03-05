@@ -18,37 +18,23 @@ function init() {
   body.addEventListener('keydown', function(event) {
   function onKeyDownHandler(e) {
   const key = e.key;
- 
-  if (key === alphabet[index]) {
+  while (codes[index] < codes.length){
+  if (key === codes[index]) {
+    console.log(key);
+    console.log(index);
     index++;
- 
-    if (index === alphabet.length) {
-      alert("Hurray!");
- 
-      index = 0;
-    }
-  } else {
+  }
+  
+  if (index === codes.length-1) {
+    alert("Hurray!");
     index = 0;
   }
+   else {
+    index = 0;
+   }
+  }
 }
-
 });
-let index = 0;
-
-function onKeyDownHandler(e) {
-  const key = e.key;
- 
-  if (key === alphabet[index]) {
-    index++;
- 
-    if (index === alphabet.length) {
-      alert("Hurray!");
- 
-      index = 0;
-    }
-  } else {
-    index = 0;
-  }
+var index = 0;
 }
 
-}
